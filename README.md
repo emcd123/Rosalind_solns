@@ -2,5 +2,4 @@
 My attempts on rosalind Q's
 
 
-Written in Python 
-Occasional R file
+Written in Python,occasionally in R
