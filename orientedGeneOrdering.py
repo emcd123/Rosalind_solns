@@ -8,12 +8,12 @@ def geneOrder(n):
         seqList = map(list,list(itertools.permutations(seq,n)))#create a list of lists of the permuntations
         resultSeqList = []
         for i in seqList:
-            errorCatch =0#like a signal to program on whether to append to list or not,removes unwanted permutations
+            signalFlag =0#like a signal to program on whether to append to list or not,removes unwanted permutations
             for j in i:
                 if ((j in i) & ((j*-1) in i)):
-                    errorCatch = 1
+                    signalFlag = 1
                     break
-            if errorCatch == 0:
+            if signalFlag == 0:
                     resultSeqList.append(i)
     
         #create the correct format for answering
